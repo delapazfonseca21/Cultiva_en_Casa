@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-CO">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +19,10 @@
         <span>Cultiva en Casa</span>
       </a>
       <div class="nav-links">
-        <a href="/biblioteca" onclick="showTab('biblioteca')">Biblioteca de Cultivos</a>
-        <a href="/seguimiento" onclick="showTab('seguimiento')">Registro y Seguimiento</a>
-        <a href="/asesoria" onclick="showTab('asesoria')">Asesoría</a>
-        <a href="/foro" onclick="showTab('foro')">Foro</a>
+        <a href="01-biblioteca/index.html">Biblioteca de Cultivos</a>
+        <a href="./04-bitácora/index.html">Registro y Seguimiento</a>
+        <a href="./02-asesoría/index.html">Asesoría</a>
+        <a href="./03-foro/index.html">Foro</a>
       </div>
       <div class="auth-buttons">
         <button class="btn btn-outline" onclick="openModal('login')">Iniciar Sesión</button>
@@ -35,104 +35,6 @@
     <section id="home" class="tab-content active">
       <h1>Cultiva tus propios alimentos en casa</h1>
       <p>Aprende, cultiva y comparte experiencias en nuestra comunidad de agricultura urbana</p>
-    </section>
-
-    <section id="biblioteca" class="tab-content">
-      <h2>Biblioteca de Cultivos</h2>
-      <div class="crop-card">
-        <img alt="Cultivo de papa en tierra fértil" src="/path/to/potato.jpg" width="400" height="200">
-        <div class="crop-info">
-          <h3>Papa</h3>
-          <h4>Siembra:</h4>
-          <p>La papa se siembra a una profundidad de 10-15 cm, con una distancia entre plantas de 30-40 cm...</p>
-          <h4>Cosecha:</h4>
-          <p>La cosecha se realiza cuando las hojas se tornan amarillas y se secan...</p>
-        </div>
-      </div>
-      <div class="crop-card">
-        <img alt="Cultivo de cebolla en campo" src="/path/to/onion.jpg" width="400" height="200">
-        <div class="crop-info">
-          <h3>Cebolla</h3>
-          <h4>Siembra:</h4>
-          <p>La cebolla se siembra en surcos a una distancia de 15 cm entre plantas...</p>
-          <h4>Cosecha:</h4>
-          <p>La cosecha se realiza cuando las hojas están secas...</p>
-        </div>
-      </div>
-      <div class="crop-card">
-        <img alt="Cultivo de maíz en campo" src="/path/to/corn.jpg" width="400" height="200">
-        <div class="crop-info">
-          <h3>Maíz</h3>
-          <h4>Siembra:</h4>
-          <p>El maíz se siembra a una profundidad de 5-7 cm, en agrupaciones...</p>
-          <h4>Cosecha:</h4>
-          <p>La cosecha se realiza cuando los granos están rellenos y secos...</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="seguimiento" class="tab-content">
-      <h2>Registro y Seguimiento de Siembra</h2>
-      <form class="planting-form">
-        <div class="form-group">
-          <label>Fecha de Siembra</label>
-          <input type="date" required>
-        </div>
-        <div class="form-group">
-          <label>Notas de Seguimiento</label>
-          <textarea rows="4" required></textarea>
-        </div>
-        <div class="file-upload">
-          <label>Subir Fotos</label>
-          <input type="file" accept="image/*" multiple>
-        </div>
-        <button type="submit" class="btn btn-primary">Guardar Registro</button>
-      </form>
-    </section>
-
-    <section id="asesoria" class="tab-content">
-      <h2>Asesoría Profesional</h2>
-      <form class="consultation-form">
-        <div class="form-group">
-          <label>Tipo de Cultivo</label>
-          <input type="text" required>
-        </div>
-        <div class="form-group">
-          <label>Fecha de Siembra</label>
-          <input type="date" required>
-        </div>
-        <div class="form-group">
-          <label>Estado Actual de la Planta</label>
-          <textarea rows="4" required></textarea>
-        </div>
-        <div class="form-group">
-          <label>Pregunta al Profesional</label>
-          <textarea rows="4" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Enviar Consulta</button>
-      </form>
-      <div class="response-area">
-        <h3>Respuesta del Profesional</h3>
-        <p>Aquí aparecerá la respuesta del asesor...</p>
-      </div>
-    </section>
-
-    <section id="foro" class="tab-content">
-      <h2>Foro Comunitario</h2>
-      <form class="forum-post">
-        <div class="form-group">
-          <label>Tema</label>
-          <input type="text" required>
-        </div>
-        <div class="form-group">
-          <label>Contenido</label>
-          <textarea rows="6" required></textarea>
-        </div>
-        <button type="submit" class="btn btn-primary">Publicar</button>
-      </form>
-      <div class="forum-responses">
-        <!-- Responses will be dynamically added here -->
-      </div>
     </section>
   </main>
 

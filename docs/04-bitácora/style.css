@@ -1,0 +1,10 @@
+.tab-content {
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+  
+.tab-content.active {
+    display: block;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Bitácora</title>
+</head>
+<body>
+    <section id="seguimiento" class="tab-content">
+        <h2>Registro y Seguimiento de Siembra</h2>
+        <form class="planting-form">
+          <div class="form-group">
+            <label>Fecha de Siembra</label>
+            <input type="date" required>
+          </div>
+          <div class="form-group">
+            <label>Notas de Seguimiento</label>
+            <textarea rows="4" required></textarea>
+          </div>
+          <div class="file-upload">
+            <label>Subir Fotos</label>
+            <input type="file" accept="image/*" multiple>
+          </div>
+          <button type="submit" class="btn btn-primary">Guardar Registro</button>
+        </form>
+      </section>
+</body>
+</html>
