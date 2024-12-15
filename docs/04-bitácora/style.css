@@ -1,4 +1,4 @@
-.tab-content {
+/*.tab-content {
     padding: 2rem;
     background: white;
     border-radius: 10px;
@@ -7,4 +7,69 @@
   
 .tab-content.active {
     display: block;
+}*/
+*{
+    padding 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+}
+h1{
+    background-color: greenyellow;
+    color:  darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h2{
+    height: 40px;
+    align-items: center;
+    /*top: 10px;*/
+    color: darkgreen;
+    padding: 15px 10px;    
+}
+form{
+    border: solid darkgreen;
+    border-width: 5px;
+    border-radius: 30px;
+    /*display: flex;*/
+    height: 300px;
+    width: 400px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 30px;
+}
+.form-group input{
+    padding: 0px 30px 0px 30px;  
+    
+}
+.form-group label{
+    padding-right: 30px;
+
+}
+.form-group{
+    margin-bottom: 20px;
+}
+.form-group1{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    gap: 10px; /* Espacio entre los elementos */
+}
+.form-group1 textarea{
+    margin-bottom: 20px;
+}
+.file-upload{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+button{
+    background-color: darkgreen;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
 }
