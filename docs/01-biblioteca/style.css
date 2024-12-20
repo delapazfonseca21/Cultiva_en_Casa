@@ -1,0 +1,33 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height: 100vh;
+}
+header{
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: darkgreen;
+    color: white;
+}
+.botones{
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en una columna */
+    gap: 20px; /* Espacio entre los elementos */
+    /*border: solid;*/
+    height: 300px;
+    width: 100px;    
+}
+button{
+    background-color: darkgreen;
+    color: white;
+}
+button:hover{
+    background-color: greenyellow;
+    color: red;
+}
+dialog{
+    height: 600px;
+}

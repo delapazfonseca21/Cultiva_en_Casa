@@ -16,8 +16,8 @@ body{
     height: 100vh;
 }
 h1{
-    background-color: greenyellow;
-    color:  darkgreen;
+    background-color: darkgreen;
+    color:  white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,4 +72,13 @@ button{
     color: white;
     padding: 5px;
     margin-top: 20px;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+header{
+    width: 100%;
 }
