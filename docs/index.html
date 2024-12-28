@@ -4,61 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>CULTIVA EN CASA - HUERTO URBANO</title>
+    <title>Inicio - Huerto Urbano</title>
 
 </head>
 <body>
-  <!--<nav class="navbar">
-    <div class="navbar-container">
-      <a href="/" class="logo">
-        <svg viewBox="0 0 100 100">
-          <circle cx="50" cy="50" r="45" fill="#4CAF50"/>
-          <path d="M30 50 Q50 20 70 50" stroke="white" stroke-width="5" fill="none"/>
-          <circle cx="50" cy="45" r="8" fill="#45a049"/>
-        </svg>
-        <span>Cultiva en Casa</span>
-      </a>
-      <div class="nav-links">
-        <a href="01-biblioteca/index.html">Biblioteca de Cultivos</a>
-        <a href="./04-bitácora/index.html">Registro y Seguimiento</a>
-        <a href="./02-asesoría/index.html">Asesoría</a>
-        <a href="./03-foro/index.html">Foro</a>
-      </div>
-      <div class="auth-buttons">
-        <button class="btn btn-outline" onclick="openModal('login')">Iniciar Sesión</button>
-        <button class="btn btn-primary" onclick="openModal('register')">Registrarse</button>
-      </div>
-    </div>
-  </nav>-->
   <header><!--encabezado de la pagina-->
     <img src="./img/img/emblema cultiva en casa.JPG" alt="logo">
-    <h1>CULTIVA EN CASA</h1>
+    <h1>Cultiva en Casa</h1>
     <ul>
-        <li>Biblioteca de Cultivos</li>
-        <li>Registro y Seguimiento</li>
-        <li>Asesoría</li>
-        <li>Foro</li>
+        <a href="./01-biblioteca/index.html"><li>Biblioteca de Cultivos</li></a>
+        <a href="./04-bitácora/index.html"><li>Registro y Seguimiento</li></a>
+        <a href="./02-asesoría/index.html"><li>Asesoría</li></a>
+        <a href="./03-foro/index.html"><li>Foro</li></a>
     </ul>
     <nav><!--(navigater)donde se ponen los enlaces principales e la web para botones y demas-->
         <ul>
-            <li><a href="">Incio de sesion</a></li>
-            <li><a href="">Registro</a></li>
+            <a href="">
+              <li>Inicar Sesión</li>
+            </a>
+            <a href="">
+              <li>Registrarse</li>
+            </a>
         </ul>
     </nav>
 </header>
 
   <main class="main-content">
     <section id="home" class="tab-content active">
-      <h1>Cultiva tus propios alimentos en casa</h1>
+      <h2>Cultiva tus propios alimentos en casa</h2>
       <p>Aprende, cultiva y comparte experiencias en nuestra comunidad de agricultura urbana</p>
     </section>
   </main>
 
-  <div id="loginModal" class="modal">
+  <div class="modal">
     <div class="modal-content">
-      <span class="close-modal" onclick="closeModal('login')">&times;</span>
       <h2>Iniciar Sesión</h2>
-      <form id="loginForm" onsubmit="handleLogin(event)">
+      <form id="loginForm">
         <div class="form-group">
           <label for="loginEmail">Correo Electrónico</label>
           <input type="email" id="loginEmail" required>
