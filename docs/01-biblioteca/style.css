@@ -31,3 +31,25 @@ button:hover{
 dialog{
     height: 600px;
 }
+section{
+    display: flex;
+    overflow-x: auto;
+    height: 500px;
+    width: 100%;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+div{
+    background-color: chartreuse;
+    height: 400px;
+    width: 260px;
+    text-align: center;
+    flex: 0 0 auto;
+
+}
+div>img{
+    width: 150px;
+}
+span{
+    display: block;
+}
