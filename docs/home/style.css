@@ -1,0 +1,77 @@
+:root {
+  --primary-color: #4CAF50;
+  --secondary-color: #45a049;
+  --background-color: #f9fff9;
+  --text-color: black;
+  --textSize: 1.7rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--background-color);
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/New_crops-Chicago_urban_farm.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text-color);
+  font-size: var(--textSize);
+  height: 100vh;
+}
+
+.main-content {
+  height: 80%;
+  padding: 2rem;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+
+}
+
+ul{
+  display: flex;
+  list-style: none;/*para quitar viñetas*/
+  gap: 2rem;/*para separar*/
+}
+
+li{
+  padding: 1.5rem 1rem;/*el espacio entre el contenido y el contenedor*/
+  cursor: pointer;
+
+}
+a{
+  text-decoration:solid;
+  color: var(--text-color);
+}
+
+li:hover{
+  background-color: beige;
+}
+img{
+  display: flex;
+  height: 70px;
+  width: 80px;
+  border-radius: 50px;
+}
+h1, img{
+  cursor: pointer;
+}
+section h2{
+  font-weight:900;
+}
+header h1{
+  text-align: left;
+}

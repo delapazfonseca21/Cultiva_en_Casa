@@ -1,244 +1,85 @@
-:root {
-  --primary-color: #4CAF50;
-  --secondary-color: #45a049;
-  --background-color: #f9fff9;
-  --text-color: #333;
-  --textSize: 1.7rem;
-}
-
-* {
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-html{
+html {
   font-size: 62.5%;
 }
 
-body {
-  background-color: var(--background-color);
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/New_crops-Chicago_urban_farm.jpg");
+body{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100svh;
+  font-size: 2rem;
+
+  /* Fondo */
+  background-image: url('./img/como-crear-un-huerto-urbano\ \(1\).jpeg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: var(--text-color);
-  font-size: var(--textSize);
 }
 
-.main-content {
-  margin-top: 80px;
-  padding: 2rem;
-  max-width: 120rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.hero {
-  text-align: center;
-  padding: 4rem 0;
-}
-
-.hero h1 {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  margin-bottom: 1rem;
-}
-
-.hero p {
-  font-size: 1.2rem;
-  color: #666;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.features {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  padding: 2rem 0;
-}
-
-.feature-card {
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-}
-
-.feature-icon {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto 1rem;
-  fill: var(--primary-color);
-}
-
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.5);
-  z-index: 1001;
-  justify-content: center;
-  align-items: center;
-}
-
-.modal.active {
-  display: flex;
-}
-
-.modal-content {
+.form-container{
+  width: 50rem;
   background-color: white;
-  padding: 2rem;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 400px;
-  position: relative;
+  border-radius: 1rem;
+  padding: 5rem;
 }
 
-.close-modal {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  cursor: pointer;
-  font-size: 1.5rem;
+.logo-cultiva{
+  width: 15rem;
 }
 
-.form-group {
-  margin-bottom: 1rem;
+.banner{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+}
+p{
+  margin-top: 1.5rem;
 }
 
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.form-group input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-
-
-.crop-card {
-  background: white;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.crop-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-}
-
-.crop-info h3 {
-  color: var(--primary-color);
-  margin-bottom: 0.5rem;
-}
-
-.planting-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.file-upload {
-  border: 2px dashed #ddd;
-  padding: 1.5rem;
+form+p, form p {
   text-align: center;
-  border-radius: 5px;
-  margin-bottom: 1rem;
-  cursor: pointer;
 }
 
-.consultation-form {
-  max-width: 600px;
-  margin: 0 auto;
+input, button{
+  border-radius: 0.5rem;
+  border: unset;
+  padding: 1.5rem 3rem;
+  font-size: inherit;
 }
 
-.response-area {
-  background: #f5f5f5;
-  padding: 1rem;
-  border-radius: 5px;
-  margin-top: 1rem;
-}
-
-.forum-post {
-  background: white;
-  padding: 1.5rem;
-  border-radius: 10px;
-  margin-bottom: 1.5rem;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.forum-topic {
+button{
+  background-color: #249e26;
+  color: white;
   font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.forum-content {
-  margin-bottom: 1rem;
-}
-
-.forum-responses {
-  margin-left: 2rem;
-  padding-left: 1rem;
-  border-left: 2px solid var(--primary-color);
-}
-  
-
-
-header{
-display: flex;
-align-items: center;
-justify-content: space-between;
-background-color: greenyellow;
-color: darkgreen
-}
-
-ul{
-  display: flex;
-  list-style: none;/*para quitar viñetas*/
-  gap: 20px;/*para separar*/
-}
-
-li{
-  padding: 15px 10px;/*el espacio entre el contenido y el contenedor*/
-  cursor: pointer;
-
-}
-a{
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-li:hover{
-  background-color: beige;
-}
-h1{
   cursor: pointer;
 }
 
-img{
-  display: flex;
-  height: 70px;
-  width: 80px;
-  border-radius: 50px;
-  cursor: pointer;
+.error{
+  color: rgb(255, 81, 81);
+}
+
+.escondido{
+  display: none;
+}
+
+.sr-only{
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width: 0.1rem;
+  height: 0.rem;
+  overflow: hidden;
 }
