@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+    font-weight: 600;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.header-top {
+    background-color: rgb(36, 241, 173);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.icon {
+    width: 24px;
+}
+
+.header-central {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+.header-central > img {
+    max-height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+.header-central > p {
+    text-decoration: underline;
+}
+
+.header-bottom {
+    background-color: rgb(220, 220, 220);
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 40px 5%;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.noticias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.noticias > h3 {
+    position: absolute;
+    top: 20px;
+    left: 5%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.blogpost > p {
+    margin: 24px 0;
+    width: 100%;
+    max-width: 800px;
+}
+
+#btn {
+    padding: 10px 15px;
+    background-color: transparent;
+    border: 1px solid rgb(0, 206, 138);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#btn:hover {
+    background-color: rgb(0, 206, 138);
+    color: white;
+}
+
+.section-blogs h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container-blogs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    gap: 32px;
+    padding: 0 20px;
+}
+
+.blog {
+    width: 100%;
+    max-width: 275px;
+}
+
+.blog > img {
+    width: 100%;
+    height: auto;
+    max-width: 280px;
+}
+
+.blog > p {
+    margin: 25px 0;
+}
+
+@media screen and (max-width: 1166px) {
+    .header-bottom {
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./icons/joshua-woroniecki-lzh3hPtJz9c-unsplash.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    .noticias > h3 {
+        position: static;
+        margin-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        color: #000;
+    }
+
+    .noticias > img {
+        display: none;
+    }
+
+    .blogpost {
+        color: #fff;
+    }
+
+    .blogpost > #btn {
+        color: #fff;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .header-top {
+        justify-content: center;
+    }
+
+    .header-central {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-central > img {
+        max-height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .header-bottom {
+        padding: 40px 20px;
+    }
+
+    .noticias > h3 {
+        font-size: 1.2em;
+        padding: 8px 15px;
+    }
+
+    .blogpost > p {
+        font-size: 14px;
+    }
+
+    .container-blogs {
+        grid-template-columns: 1fr;
+    }
+}
