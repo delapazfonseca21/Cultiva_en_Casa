@@ -54,54 +54,29 @@ body {
     width: 100%;
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .img-perfil {
-    width: 400px;
-    max-width: 100%;
+    width: 92vw;
+    max-width: 92vw;
     height: auto;
 }
 
-/* .blogpost {
-    width: 100%;
-    padding: 0 15px;
-} */
-
-.about-me > p {
-    margin: 24px 0;
-    width: 100%;
-    max-width: 800px;
-    word-wrap: break-word;
-}
-
-.section-proyectos > h2 {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.container-proyectos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    justify-items: center;
-    gap: 32px;
-    padding: 0 20px;
-    border-top: 1px solid rgb(179, 178, 178);
-    width: 85%;
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 92vw;
     margin: 0 auto;
     padding: 25px 0;
 }
 
-.proyectos {
-    width: 100%;
-    max-width: 275px;
-}
-
-.proyectos > img {
-    width: 100%;
-    height: auto;
-    max-width: 280px;
-}
-
-.proyectos > p {
-    margin: 25px 0;
+section > h1 {
+    font-size: 2.5rem;
 }
 
 footer {
@@ -143,33 +118,6 @@ footer p {
     text-align: center;
 }
 
-@media screen and (max-width: 1166px) {
-    .header-bottom {
-        flex-direction: column;
-        align-items: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .footer-contact {
-        flex-direction: column;
-        align-items: center;
-        padding: 50px 20px;
-    }
-
-    .container-contact {
-        margin-bottom: 30px;
-    }
-
-    .container-contact:last-child {
-        margin-bottom: 0;
-    }
-}
-
 @media screen and (max-width: 600px) {
     .header-top {
         justify-content: center;
@@ -184,32 +132,7 @@ footer p {
         max-height: 50px;
         margin-bottom: 10px;
     }
-
-    .header-bottom {
-        padding: 20px;
-    }
-
-    .img-perfil {
-        width: 100%;
-        max-width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        object-fit: cover;
-    }
-
-    .blogpost {
-        padding: 0;
-    }
-
-    .blogpost > p {
-        font-size: 14px;
-        margin: 15px 0;
-    }
-
-    .container-proyectos {
-        grid-template-columns: 1fr;
-    }
-}
+} 
 
 @media screen and (max-width: 480px) {
     .footer-contact {
@@ -230,3 +153,4 @@ footer p {
         font-size: 14px;
     }
 }
+    
