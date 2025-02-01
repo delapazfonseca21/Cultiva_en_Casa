@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Iniciar sesión - Cultiva en Casa</title>
 
+
   <link rel="stylesheet" href="./style.css">
-  <link rel="shortcut icon" href="./img/emblema cultiva en casa.JPG" type="image/x-icon">
+  <link rel="shortcut icon" href="./public/img/emblemaorg.jpg" type="image/x-icon">
+  <script src="./main.js" defer></script>
 
 </head>
 <body>
@@ -25,11 +27,13 @@
         <label for="password" class="sr-only">Password</label>
         <input type="password" name="password" id="password" placeholder="Contraseña">
 
-        <button type="submit">Iniciar sesión</button>
+        <button type="submit" id="go-home">Iniciar sesión</button>
         
         <p class="error escondido">Error al iniciar sesión</p>
       </form>
-      <p>¿Todavía no tienes una cuenta? - <a href="./register.html">Registrate</a></p>
+
+      <p>¿Todavía no tienes una cuenta? - <a href="../docs/pages/0-registro/register.html">Registrate</a></p>
+
     </div>
   </main>
 </body>

@@ -1,0 +1,19 @@
+header {
+flex-direction: column;
+text-align: center;
+}
+
+header h1{
+    margin: 2rem !important;
+}
+
+ul {
+flex-direction: column;
+gap: 1rem;
+padding-top: 1rem;
+}
+
+li {
+width: 100%;
+text-align: center;
+}

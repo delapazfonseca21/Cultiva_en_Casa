@@ -31,7 +31,6 @@ body {
 header {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   background-color: var(--primary-color);
   padding: 1.5rem 2rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -39,6 +38,15 @@ header {
   top: 0;
   z-index: 1000;
 }
+
+header h1{
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  margin-right: 29rem;
+  cursor: default;
+}
+
 
 
 header img {
@@ -81,24 +89,7 @@ a {
   font-size: 1.6rem;
 }
 
-/* 📱 DISEÑO RESPONSIVO */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  ul {
-    flex-direction: column;
-    gap: 1rem;
-    padding-top: 1rem;
-  }
-
-  li {
-    width: 100%;
-    text-align: center;
-  }
-}
 
 /* 🔹 FONDO PARA EL TEXTO DEL MAIN */
 .main-content {

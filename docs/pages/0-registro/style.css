@@ -62,7 +62,7 @@ p {
   font-size: 1.6rem;
 }
 
-
+/* 📌 Estilos del formulario */
 form {
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ form + p, form p {
   text-align: center;
 }
 
-
+/* 📌 Inputs y botones optimizados para móviles */
 input, button {
   border-radius: 0.5rem;
   border: unset;
@@ -93,7 +93,7 @@ button:hover {
   background-color: #1c7e1f;
 }
 
-
+/* 📱 Mejor tamaño de botones en móviles */
 @media (max-width: 480px) {
   input, button {
     padding: 1.2rem 2rem;
@@ -101,13 +101,13 @@ button:hover {
   }
 }
 
-
+/* ❌ Mensaje de error */
 .error {
   color: rgb(255, 81, 81);
   font-size: 1.6rem;
 }
 
-
+/* 🔹 Elementos ocultos */
 .escondido {
   display: none;
 }
