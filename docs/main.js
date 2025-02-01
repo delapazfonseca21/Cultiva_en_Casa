@@ -11,7 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (username && password) {
                 // Redirige si hay datos en los campos
-                window.location.href = "/docs/pages/02-home/index.html";
+                window.location.href = "pages/02-home/index.html";
+
+
             } else {
                 alert("Por favor, completa todos los campos.");
             }
