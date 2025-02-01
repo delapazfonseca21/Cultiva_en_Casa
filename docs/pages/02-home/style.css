@@ -21,14 +21,13 @@ body {
   background-color: var(--background-color);
   background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/New_crops-Chicago_urban_farm.jpg");
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
   color: var(--text-color);
   font-size: var(--textSize);
   height: 100vh;
 }
 
-/* 🎨 HEADER MEJORADO */
+
 header {
   display: flex;
   align-items: center;
@@ -41,10 +40,10 @@ header {
   z-index: 1000;
 }
 
-/* Logo y título */
+
 header img {
-  height: 60px;
-  width: 60px;
+  height: 7rem;
+  width: 7rem;
   border-radius: 50%;
 }
 
