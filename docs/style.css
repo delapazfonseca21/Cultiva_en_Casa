@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,12 +8,14 @@ html {
   font-size: 62.5%;
 }
 
-body{
+body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
+  min-height: 100vh;
+  padding: 2rem;
 
   /* Fondo */
   background-image: url('./img/como-crear-un-huerto-urbano\ \(1\).jpeg');
@@ -22,62 +24,98 @@ body{
   background-size: cover;
 }
 
-.form-container{
-  width: 50rem;
+/* 🎨 Contenedor del formulario */
+.form-container {
+  width: 90%;
+  max-width: 50rem;
   background-color: white;
   border-radius: 1rem;
   padding: 5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.logo-cultiva{
-  width: 15rem;
+/* 📷 Logo */
+.logo-cultiva {
+  width: 12rem;
+  display: block;
+  margin: 0 auto 2rem;
 }
 
-.banner{
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr;
+/* 📱 Ajustes en el banner */
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
 }
-p{
+
+/* En móviles, el banner se apila */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+p {
   margin-top: 1.5rem;
+  font-size: 1.6rem;
 }
 
-form{
+/* 📌 Estilos del formulario */
+form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-form+p, form p {
+form + p, form p {
   text-align: center;
 }
 
-input, button{
+/* 📌 Inputs y botones optimizados para móviles */
+input, button {
   border-radius: 0.5rem;
   border: unset;
   padding: 1.5rem 3rem;
-  font-size: inherit;
+  font-size: 1.8rem;
 }
 
-button{
+button {
   background-color: #249e26;
   color: white;
   font-weight: bold;
   cursor: pointer;
+  transition: background 0.3s ease-in-out;
 }
 
-.error{
+button:hover {
+  background-color: #1c7e1f;
+}
+
+/* 📱 Mejor tamaño de botones en móviles */
+@media (max-width: 480px) {
+  input, button {
+    padding: 1.2rem 2rem;
+    font-size: 1.6rem;
+  }
+}
+
+/* ❌ Mensaje de error */
+.error {
   color: rgb(255, 81, 81);
+  font-size: 1.6rem;
 }
 
-.escondido{
+/* 🔹 Elementos ocultos */
+.escondido {
   display: none;
 }
 
-.sr-only{
-  position:absolute;
-  left:-10000px;
-  top:auto;
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
   width: 0.1rem;
   height: 0.rem;
   overflow: hidden;
