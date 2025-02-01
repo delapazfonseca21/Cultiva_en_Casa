@@ -1,0 +1,22 @@
+{
+  "name": "cultiva_en_casa",
+  "version": "2.1.0",
+  "description": "website para la interacción y ayuda en la consolidación de los huertos urbanos",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delapazfonseca21/Cultiva_en_Casa.git"
+  },
+  "author": "José De La Paz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/delapazfonseca21/Cultiva_en_Casa/issues"
+  },
+  "homepage": "https://github.com/delapazfonseca21/Cultiva_en_Casa#readme"
+}
