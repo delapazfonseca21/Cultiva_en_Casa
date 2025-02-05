@@ -13,10 +13,13 @@
     "type": "git",
     "url": "git+https://github.com/delapazfonseca21/Cultiva_en_Casa.git"
   },
-  "author": "José De La Paz",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/delapazfonseca21/Cultiva_en_Casa/issues"
   },
-  "homepage": "https://github.com/delapazfonseca21/Cultiva_en_Casa#readme"
+  "homepage": "https://github.com/delapazfonseca21/Cultiva_en_Casa#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
