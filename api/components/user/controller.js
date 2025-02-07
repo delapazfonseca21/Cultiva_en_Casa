@@ -1,33 +1,27 @@
-const storage = require("../../../storage/dummydb")
-const nanoid = require('nanoid');
-const tabla = "user";
+const UserModel = require("../../models/userModel")
 
+const userController = {
+    handleLogin: async (req, res)=>{
+        try{
+            const {username, password} = req.body
+            const result = await UserModel.login(username, password)
+            if(result.length > 0){
+                res.writeHead(200, {'Content-Type': 'application/json'})
+                res.end(JSON.stringify({succes: true, user: result[0]}))
 
-
-module.exports = function (injectedStorage){
-    let storage = injectedStorage;
-    if(!storage){
-        storage = require("../../../storage/dummydb")
-    }
-    function list(){
-        return storage.list(tabla);
-    }
-    function get(id){
-        return storage.list(tabla, id);
-    }
-    function upsert(body){
-        const user = {
-            name: body.name
-        }
-        if(body.id){
-            user.id=body.id;
-        }else{
-            user.id = nanoid();
+            }else{
+                res.writeHead(401, {'Content-Type': 'application/json'})
+                res.end(JSON.stringify({succes: false, message: "usuario no enocontrado"}))
+            }
+        }catch(err){
+            res.writeHead(500, { 'Content-Type': 'application/json' });
+            res.end(JSON.stringify({
+                success: false,
+                message: 'Error en el servidor',
+                error: error.message
+            }));
         }
     }
-
-    return{
-        list,
-        get
-    };
 }
+
+module.exports = userController;
