@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="../docs/public/img/emblemaorg.jpg" type="image/x-icon">
   <title>Registro - Cultiva en Casa</title>
   <link rel="stylesheet" href="./style.css">
-  <script type="module" src="auth.js" defer></script>
+  <script src="auth.js" defer></script>
 
 </head>
 <body>
@@ -20,27 +20,28 @@
       </div>
 
       <p class="bienvenida">Crea tu cuenta para acceder a todos nuestros servicios.</p>
-      <form id="register-form">
-        <label for="user" class="sr-only">User</label>
-        <input type="text" name="user" id="user" placeholder="Nombre de usuario">
+      <form id="registerForm"> <!-- Modificado de register-form a registerForm -->
+        <label for="registerName" class="sr-only">Nombre</label>
+        <input type="text" name="name" id="registerName" placeholder="Nombre de usuario" required>
 
-        <label for="email" class="sr-only">Email</label>
-        <input type="email" name="email" id="email" placeholder="Correo electrónico">
+        <label for="registerEmail" class="sr-only">Email</label>
+        <input type="email" name="email" id="registerEmail" placeholder="Correo electrónico" required>
 
-        <label for="email" class="sr-only">CC/TI</label>
+        <label for="identidad" class="sr-only">CC/TI</label>
         <input type="number" name="cedula" id="identidad" placeholder="Cédula">
 
-        <label for="password" class="sr-only">Password</label>
-        <input type="password" name="password" id="password" placeholder="Contraseña">
+        <label for="registerPassword" class="sr-only">Contraseña</label>
+        <input type="password" name="password" id="registerPassword" placeholder="Contraseña" required>
 
-        <label for="password2" class="sr-only">Password</label>
-        <input type="password" name="password2" id="password2" placeholder="Repita la contraseña">
+        <label for="registerPassword2" class="sr-only">Repetir Contraseña</label>
+        <input type="password" name="password2" id="registerPassword2" placeholder="Repita la contraseña" required>
 
         <button type="submit">Registrarse</button>
         <p class="error escondido" id="register-error-message">Error al registrarse</p>
       </form>
       <p>¿Ya estás registrado? - <a href="../../index.html">Inicia sesión</a></p>
     </div>
-  </main>
+</main>
+
 </body>
 </html>

@@ -12,36 +12,32 @@
 
   <link rel="stylesheet" href="./style.css">
   <link rel="shortcut icon" href="./public/img/emblemaorg.jpg" type="image/x-icon">
-  <script type="module" src="./main.js" defer></script>
+  <script type="module" src="./login.js" defer></script>
 
 </head>
 <body>
   <main>
     <div class="form-container">
-
       <div class="banner">
         <h1>Iniciar sesión con Cultiva en Casa</h1>
         <img src="./public/img/emblemaorg.jpg" alt="logo empresarial" class="logo-cultiva">
       </div>
       
-      <form id="login-form">
-        
+      <form id="loginForm"> <!-- Modificado el id para coincidir con el script -->
         <label>
-          <input type="email" name="user" id="loginEmail" placeholder="Correo de usuario" autocomplete="email">
+          <input type="email" name="email" id="loginEmail" placeholder="Correo de usuario" autocomplete="email" required>
         </label>
 
         <label>
-          <input type="password" name="password" id="loginPassword" placeholder="Contraseña">
+          <input type="password" name="password" id="loginPassword" placeholder="Contraseña" required>
         </label>
         
-
         <button type="submit" id="go-home">Iniciar sesión</button>
         
         <p class="error escondido" id="login-error-message">Error al iniciar sesión</p>
       </form>
-
+      
       <p>¿Todavía no tienes una cuenta? - <a href="../docs/pages/0-registro/register.html">Registrate</a></p>
-
     </div>
   </main>
 </body>
