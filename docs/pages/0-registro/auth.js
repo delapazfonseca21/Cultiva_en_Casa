@@ -1,4 +1,5 @@
 const API_URL = 'https://cultiva-en-casa-back.vercel.app/api/auth/'
+console.warn("ésto podría romperse")
 
 document.getElementById("registerForm").addEventListener("submit", async (e) => {
     e.preventDefault();
