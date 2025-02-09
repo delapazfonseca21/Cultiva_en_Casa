@@ -18,11 +18,5 @@
   "bugs": {
     "url": "https://github.com/delapazfonseca21/Cultiva_en_Casa/issues"
   },
-  "homepage": "https://github.com/delapazfonseca21/Cultiva_en_Casa#readme",
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.21.2",
-    "mysql2": "^3.12.0",
-    "nanoid": "^5.0.9"
-  }
+  "homepage": "https://github.com/delapazfonseca21/Cultiva_en_Casa#readme"
 }
