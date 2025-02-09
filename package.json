@@ -1,6 +1,6 @@
 {
   "name": "cultiva_en_casa",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "website para la interacción y ayuda en la consolidación de los huertos urbanos",
   "main": "index.js",
   "directories": {
