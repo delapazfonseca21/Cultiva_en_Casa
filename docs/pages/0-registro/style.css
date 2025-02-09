@@ -23,7 +23,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+.bienvenida{
+  margin-bottom: 1.9rem;
+}
 /* 🎨 Contenedor del formulario */
 .form-container {
   width: 90%;

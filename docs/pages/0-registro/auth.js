@@ -32,6 +32,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
 
         const data = await response.json();
         alert("Registro exitoso del usuario ", name);
+        window.location.replace('../../index.html')
     } catch (error) {
         errorMessage.textContent = error.message;
     }
