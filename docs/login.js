@@ -25,7 +25,7 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
 
         const data = await response.json();
         alert("Inicio de sesión exitoso");
-        window.location.replace("../docs/pages/02-home/index.html");
+        window.location.replace("./pages/02-home/index.html");
     } catch (error) {
         errorMessage.textContent = error.message;
     }
