@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seguimiento de la Consulta, Cultiva en Casa, Agricultura Urbana">
+
+    <link rel="shortcut icon" href="./../../public/img/emblemaorg.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js" defer></script>
+    
     <title>Seguimiento de la Consulta</title>
 </head>
 <body>
     <header>
-        <div class="header-top">
-            <h1>Seguimiento de la Consulta</h1>
-        </div>
         <div class="header-central">
-            
+            <h1>Seguimiento de la Consulta</h1>
             <a href="../02-home/index.html">
                 <img src="../../public/img/emblemaorg.jpg" alt="logo">
             </a>
@@ -26,12 +28,47 @@
             <p>Selecciona cómo deseas recibir ayuda:</p>
             <div class="opciones-ayuda">
                 <button id="btn-agricultor">Solicitar ayuda de un agricultor urbano</button>
-                <button id="btn-foro">Publicar consulta en el foro</button>
             </div>
-            <div class="estado-consulta">
-                <h3>Estado de tu consulta:</h3>
-                <p id="estado">En espera</p>
+
+            <div id="modal-overlay"></div>
+
+            <div id="caja-comentario">
+                <span id="cerrar-modal">&times;</span>
+                <h3>Comunícate con un Agricultor Urbano</h3>
+            
+                <!-- Selección de agricultor -->
+                <label for="agricultor">Selecciona un agricultor:</label>
+                <select id="agricultor">
+                    <option value="juan_perez">Juan Pérez</option>
+                    <option value="maria_gonzalez">María González</option>
+                    <option value="carlos_rodriguez">Carlos Rodríguez</option>
+                    <option value="ana_martinez">Ana Martínez</option>
+                    <option value="pedro_fernandez">Pedro Fernández</option>
+                </select>
+            
+                <!-- Área de comentario -->
+                <label for="comentario">Escribe tu consulta:</label>
+                <textarea id="comentario" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
+            
+                <!-- Input para imágenes -->
+                <label for="imagenes">Subir imágenes (hasta 4):</label>
+                <input type="file" id="imagenes" accept="image/*" multiple>
+            
+                <!-- Vista previa de imágenes -->
+                <div id="preview-imagenes"></div>
+            
+                <!-- Botón de envío -->
+                <button id="enviar-consulta">Enviar Consulta</button>
+
+                
+                
             </div>
+            
+            <div id="loader"></div>
+
+            <div id="check-exito">✔ Consulta enviada con éxito</div>
+            
+
         </section>
         
         <section class="section-proyectos">
