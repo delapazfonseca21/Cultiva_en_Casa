@@ -15,6 +15,13 @@
     <header>
         <div class="header-central">
             <h1>Seguimiento de la Consulta</h1>
+
+            <ul class="lista">
+                <a href="../01-biblioteca/blogs.html"><li>Biblioteca de Cultivos 📚</li></a>
+                <a href="../04-seguimiento/index.html"><li class="marcada">Seguimiento 📈</li></a>
+                <a href="../03-foro/blogs.html"><li>Foro 📢</li></a>
+            </ul>
+
             <a href="../02-home/index.html">
                 <img src="../../public/img/emblemaorg.jpg" alt="logo">
             </a>
@@ -36,7 +43,6 @@
                 <span id="cerrar-modal">&times;</span>
                 <h3>Comunícate con un Agricultor Urbano</h3>
             
-                <!-- Selección de agricultor -->
                 <label for="agricultor">Selecciona un agricultor:</label>
                 <select id="agricultor">
                     <option value="juan_perez">Juan Pérez</option>
@@ -46,11 +52,11 @@
                     <option value="pedro_fernandez">Pedro Fernández</option>
                 </select>
             
-                <!-- Área de comentario -->
+
                 <label for="comentario">Escribe tu consulta:</label>
                 <textarea id="comentario" placeholder="Escribe tu mensaje aquí..." rows="4"></textarea>
             
-                <!-- Input para imágenes -->
+
                 <label for="imagenes">Subir imágenes (hasta 4):</label>
                 <input type="file" id="imagenes" accept="image/*" multiple>
             
@@ -59,8 +65,6 @@
             
                 <!-- Botón de envío -->
                 <button id="enviar-consulta">Enviar Consulta</button>
-
-                
                 
             </div>
             

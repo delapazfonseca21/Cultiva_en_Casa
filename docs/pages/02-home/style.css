@@ -1,119 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
 :root {
-  --primary-color: #4CAF50;
-  --secondary-color: #45a049;
-  --background-color: #f9fff9;
-  --text-color: black;
-  --textSize: 1.7rem;
+    --primary-color: #4CAF50;
+    --secondary-color: #45a049;
+    --background-color: #f9fff9;
+    --text-color: black;
+    --text-size: 1.7rem;
+    --border-color: #ddd;
+    --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    font-size: var(--text-size);
+    color: var(--text-color);
 }
 
 html {
-  font-size: 62.5%;
+    font-size: 62.5%;
 }
 
 body {
-  background-color: var(--background-color);
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/New_crops-Chicago_urban_farm.jpg");
-  background-position: center;
-  background-size: cover;
-  color: var(--text-color);
-  font-size: var(--textSize);
-  height: 100vh;
+    background-color: var(--background-color);
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3d/New_crops-Chicago_urban_farm.jpg");
+    background-position: center;
+    background-size: cover;
+    color: var(--text-color);
+    font-size: var(--text-size);
+    height: 100vh;
 }
 
-
+/* ===== HEADER ===== */
 header {
-  display: flex;
-  align-items: center;
-  background-color: var(--primary-color);
-  padding: 1.5rem 2rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1.5rem 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
 }
-
-header h1{
-  margin-top: 1.5rem;
-  margin-left: 2rem;
-  margin-bottom: 1.5rem;
-  margin-right: 29rem;
-  cursor: default;
-}
-
-
 
 header img {
-  height: 7rem;
-  width: 7rem;
-  border-radius: 50%;
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
 }
 
 header h1 {
-  font-size: 2rem;
-  color: white;
+    font-size: 2rem;
+    color: white;
+    flex-grow: 1;
 }
 
-/* Menú de navegación */
-nav {
-  display: flex;
-  gap: 1.5rem;
+/* 🔹 Menú de navegación */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
 }
 
-ul {
-  display: flex;
-  list-style: none;
-  gap: 1.5rem;
+nav ul a {
+    text-decoration: none;
 }
 
-li {
-  padding: 1rem 1.5rem;
-  cursor: pointer;
-  border-radius: 8px;
-  transition: background 0.3s ease-in-out;
+nav ul li {
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease-in-out;
+    background-color: var(--secondary-color);
+    color: white;
 }
 
-li:hover {
-  background-color: var(--secondary-color);
+nav ul li:hover {
+    background-color: #2e2e;
 }
 
-a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.6rem;
-}
-
-
-
-/* 🔹 FONDO PARA EL TEXTO DEL MAIN */
+/* ===== MAIN ===== */
 .main-content {
-  height: 80%;
-  padding: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    height: 80%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .text-container {
-  background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 600px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .text-container h2 {
-  font-size: 2.4rem;
-  font-weight: bold;
+    font-size: 2.4rem;
+    font-weight: bold;
 }
 
 .text-container p {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+.footer-contact {
+    margin-bottom: 15px;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.footer-contact img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.footer-contact img:hover {
+    transform: scale(1.1);
+}
+
+.container-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-autor {
+    margin-top: 15px;
+}
+
+.footer-barra {
+    margin-top: 10px;
+    height: 2px;
+    background-color: var(--secondary-color);
+}
+
+/* 🔹 MEDIA QUERIES PARA MÓVILES */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    header img {
+        height: 5rem;
+        width: 5rem;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .main-content {
+        padding: 10px;
+    }
+
+    .text-container {
+        max-width: 90%;
+    }
+
+    .container-contact {
+        flex-direction: column;
+    }
+
+    .footer-contact img {
+        width: 35px;
+    }
 }
